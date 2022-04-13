@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div class="header">
+            Site header with some site title
+        </div>
+
+        <div class"navbar">
+            <nav>
+                <ul>
+                    <li><a href="{{ url("home") }}">Home</a></li>
+                    <li><a href="{{ path("about") }}">About</a></li>
+                    <li><a href="{{ path("report") }}">Report</a></li
+                </ul>
+            </nav>
+        </div>
+
+
+        {% block content %}
+        Default content
+        {% endblock %}
+
+        <div class="sitefooter">
+            <a href="https://github.com/sodo0005/mvc">Länk till Github Repot</a>
+        </div>
+
+    </body>
+</html>
