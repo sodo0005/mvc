@@ -9,10 +9,10 @@
     <body>
 
         <div class="header">
-            Site header with some site title
+        <div class="header-photo"></div>
         </div>
 
-        <div class"navbar">
+        <div class="navbar">
             <nav>
                 <ul>
                     <li><a href="{{ url("home") }}">Home</a></li>
@@ -21,14 +21,16 @@
                 </ul>
             </nav>
         </div>
+        <hr>
 
 
         {% block content %}
         Default content
         {% endblock %}
-
+        <hr>
         <div class="sitefooter">
             <a href="https://github.com/sodo0005/mvc">Länk till Github Repot</a>
+            © Sodo21
         </div>
 
     </body>

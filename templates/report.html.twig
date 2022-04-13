@@ -3,6 +3,18 @@
 {% block title %}Report{% endblock %}
 
 {% block content %}
-<h1>Report</h1>
+
+{% apply markdown_to_html %}
+Report
+======
+
+Här kommer varje rapport från alla kursmoment att presenteras
+
+***
+
+{% endapply %}
+
+{{ include('report/kmom01.markdown.twig')|markdown_to_html }}
+{{ include('report/kmom02.markdown.twig')|markdown_to_html }}
 
 {% endblock %}
